@@ -115,7 +115,7 @@ https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filter
 ```
 
 ```url
-https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filters](https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt
+https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt
 ```
 
 ```url
