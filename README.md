@@ -69,7 +69,7 @@ https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easycookie.t
 ```url
 https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboyannoyance.txt
 ```
----
+
 ```url
 https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/antiadblock.txt
 ```
@@ -115,7 +115,7 @@ https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filter
 ```
 
 ```url
-[https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filters](https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt
+https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filters](https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt
 ```
 
 ```url
@@ -133,7 +133,5 @@ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.tx
 ## ⭐ Contributi
 
 Se hai trovato una lista utile che non è ancora presente, invia una **Pull Request**!,
-
----
 
 ** Per una navigazione più pulita e sicura su Brave.**
