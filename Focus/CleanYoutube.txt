@@ -26,3 +26,4 @@ www.youtube.com###guide-links-primary
 www.youtube.com###guide-links-secondary
 www.youtube.com##.lucide-audio-lines.lucide
 www.youtube.com##button.dark\:active\:bg-gray-700.dark\:hover\:bg-gray-800.active\:bg-gray-200.hover\:bg-gray-100.dark\:text-gray-200.text-gray-600.p-1.h-\[32px\].w-\[32px\].rounded-full.hover\:text-accent-foreground.disabled\:opacity-50.disabled\:pointer-events-none.focus-visible\:ring-offset-2.focus-visible\:ring-ring.focus-visible\:ring-2.focus-visible\:outline-none.transition-colors.ring-offset-background.font-medium.text-sm.whitespace-nowrap.justify-center.items-center.inline-flex:nth-of-type(4)
+www.youtube.com###scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope
