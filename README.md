@@ -1,137 +1,168 @@
-# 🛡️ Brave Custom Filters List
 
-Una raccolta curata di liste di filtri per **Brave Browser** che integrano e potenziano il blocco predefinito, aggiungendo protezione contro pubblicità, tracker, malware e fastidi vari.
+# UB sources
+```Installazione-e-aggiornamento-liste-UB
+DEST="$PWD"
+errori=0
 
----
-## 🚀 Come aggiungere queste liste a Brave
+while IFS='|' read -r nome url; do
+    file="$DEST/$nome"
+    tmp="$(mktemp "$DEST/.download.XXXXXX")" || { errori=1; continue; }
 
-1. Apri le impostazioni di Brave
+    if curl -fLsS --retry 3 --connect-timeout 20 --max-time 180 --compressed \
+        -o "$tmp" "$url" && [[ -s "$tmp" ]]; then
+        mv -f -- "$tmp" "$file"
+        echo "OK: $nome"
+    else
+        rm -f -- "$tmp"
+        echo "ERRORE: $nome" >&2
+        errori=1
+    fi
+done <<'LISTE'
+ublock-ads.txt|https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt
+ublock-badware.txt|https://ublockorigin.github.io/uAssetsCDN/filters/badware.txt
+ublock-privacy.txt|https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt
+ublock-quick-fixes.txt|https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.txt
+ublock-unbreak.txt|https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.txt
+ublock-annoyances.txt|https://ublockorigin.github.io/uAssetsCDN/filters/annoyances.txt
+ublock-cookie-notices.txt|https://ublockorigin.github.io/uAssetsCDN/filters/annoyances-cookies.txt
+easylist.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist.txt
+adguard-ads.txt|https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
+adguard-mobile-ads.txt|https://filters.adtidy.org/extension/ublock/filters/11.txt
+easyprivacy.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easyprivacy.txt
+legitimate-url-shortener.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+url-tracking-protection.txt|https://ublockorigin.github.io/uAssetsCDN/filters/privacy-removeparam.txt
+block-outsider-intrusion-into-lan.txt|https://ublockorigin.github.io/uAssetsCDN/filters/lan-block.txt
+online-malicious-url-blocklist.txt|https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-vivaldi-online.txt
+phishing-url-blocklist.txt|https://malware-filter.gitlab.io/phishing-filter/phishing-filter.txt
+peter-lowes-ad-and-tracking-servers.txt|https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext
+dan-pollocks-hosts.txt|https://someonewhocares.org/hosts/hosts
+easylist-cookie-notices.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-cookies.txt
+adguard-cookie-notices.txt|https://filters.adtidy.org/extension/ublock/filters/18.txt
+easylist-social-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-social.txt
+adguard-social-widgets.txt|https://filters.adtidy.org/extension/ublock/filters/4.txt
+fanboy-anti-facebook.txt|https://secure.fanboy.co.nz/fanboy-antifacebook.txt
+easylist-other-annoyances.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-annoyances.txt
+easylist-ai-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-ai.txt
+easylist-chat-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt
+easylist-newsletter-notices.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
+easylist-notifications.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-notifications.txt
+adguard-mobile-app-banners.txt|https://filters.adtidy.org/extension/ublock/filters/20.txt
+adguard-other-annoyances.txt|https://filters.adtidy.org/extension/ublock/filters/21.txt
+adguard-popup-overlays.txt|https://filters.adtidy.org/extension/ublock/filters/19.txt
+adguard-widgets.txt|https://filters.adtidy.org/extension/ublock/filters/22.txt
+LISTE
 
-2. Scorri fino alla sezione **"Filtri personalizzati"**
-
-3. Clicca su **"Aggiungi lista filtri personalizzata"**
-
-4. Incolla l'URL della lista che vuoi aggiungere e clicca su **"Aggiungi"**
-
-5. Ripeti per tutte le liste che desideri
-
-6. Clicca su **"Aggiorna gli elenchi"** per scaricare i filtri più recenti
-
----
-
-## Lista Completa dei Filtri 
-
-| Nome della Lista                    | URL (Raw) per l'importazione                                                                                                    | A cosa serve                                                                                                                        |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **filters.min.txt**                 | `https://ublockorigin.pages.dev/filters/filters.min.txt`                                                                        | Blocca la maggior parte della pubblicità e dei tracker. È la lista base di uBlock Origin, spesso più aggiornata di quella di Brave. |
-| **privacy.min.txt**                 | `https://ublockorigin.pages.dev/filters/privacy.min.txt`                                                                        | Lista dedicata al blocco di tracker e script che raccolgono dati personali.                                                         |
-| **annoyances.txt**                  | `https://ublockorigin.pages.dev/filters/annoyances.txt`                                                                         | Blocca elementi fastidiosi come pop-up di cookie, widget social, notifiche e altri disturbi.                                        |
-| **easycookie.txt`**                 | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easycookie.txt`                                            | Rimuove i banner dei cookie e le notifiche GDPR.                                                                                    |
-| **fanboyannoyance.txt**             | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboyannoyance.txt`                                       | Blocca widget social, notifiche push, overlay e altri elementi fastidiosi.                                                          |
-| **antiadblock.txt**                 | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/antiadblock.txt`                                           | Rimuove i messaggi che chiedono di disabilitare l'AdBlock.                                                                          |
-| **easylist-ai.txt`**                | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-ai.txt`                                           | Nasconde i suggerimenti AI sui motori di ricerca e in altri contesti.                                                               |
-| **easylist-chat.txt**               | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-chat.txt`                                         | Blocca le chat di supporto e i widget di chat invadenti.                                                                            |
-| **easylist-notifications.txt**      | `https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-notifications.txt`                                | Previene i popup di notifica dei siti web.                                                                                          |
-| **LegitimateURLShortener.txt**      | `https://gitlab.com/DandelionSprout/adfilt/-/raw/master/LegitimateURLShortener.txt`                                             | Rimuove i parametri di tracciamento dagli URL, pulendo i link e proteggendo la privacy.                                             |
-| **block_third_party_fonts.txt**     | `https://raw.githubusercontent.com/yokoffing/filterlists/main/block_third_party_fonts.txt`                                      | Blocca i font caricati da domini esterni, migliorando velocità e privacy.                                                           |
-| **annoyance_list.txt**              | `https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt`                                               | Cattura fastidi comuni (es. "articoli correlati", "leggi anche") spesso trascurati da altre liste.                                  |
-| **tif.mini.txt**                    | `https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/tif.mini.txt`                                               | Blocca domini di malware, phishing e truffe noti. Versione leggera ottimizzata per browser.                                         |
-| **Dandelion Spr...alware List.txt** | `https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt`                         | Blocca domini con alti tassi di abuso, malware, dominio parcheggiato e PUP.                                                         |
-| **filterlist-basic.txt`**           | `https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist-basic.txt`                                               | Lista di siti considerati non sicuri, mantenuta dalla comunità FMHY.                                                                |
-| **filterlist.txt`**                 | `https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist.txt`                                                     | Lista completa della comunità FMHY per bloccare contenuti indesiderati.                                                             |
-| **filters**                         | `https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filters`                                             | Filtri personali per rimuovere elementi fastidiosi da vari siti.                                                                    |
-| **InstagramAnt...mScrolling.txt**   | `https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt` | Nasconde feed, search e reel su Instagram per evitare lo scrolling infinito.                                                        |
-| **abp**                             | `https://www.i-dont-care-about-cookies.eu/abp/`                                                                                 | Rimuove i banner dei cookie (alternativa a EasyList Cookie).                                                                        |
-| **serverlist.php**                  | `https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblock-plus&showintro=0&mimetype=plaintext`                          | Lista di domini noti per pubblicità e tracciamento.                                                                                 |
-| **nocoin.txt**                      | `https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt`                                             | Blocca i miner di criptovalute che si nascondono nei siti web.                                                                      |
-
-
----
-
-## Facile copia incolla delle liste 
-
-```url
-https://ublockorigin.pages.dev/filters/filters.min.txt
+echo "File scaricati/aggiornati in: $DEST"
+(( errori == 0 ))
 ```
 
-```url
-https://ublockorigin.pages.dev/filters/privacy.min.txt
+# Regional UB sources
+
+```Installazione-e-aggiornamento-liste-Regionali
+DEST="$PWD"
+META="$(mktemp)" || exit 1
+ELENCO="$(mktemp)" || { rm -f "$META"; exit 1; }
+trap 'rm -f "$META" "$ELENCO"' EXIT
+
+if ! curl -fLsS --retry 3 --connect-timeout 20 --max-time 60 \
+    -o "$META" \
+    "https://raw.githubusercontent.com/gorhill/uBlock/master/assets/assets.json"; then
+    echo "Errore: impossibile scaricare il catalogo delle liste." >&2
+    exit 1
+fi
+
+if ! python3 - "$META" > "$ELENCO" <<'PY'
+import json
+import sys
+
+liste = [
+    ("albania", "ALB-0"),
+    ("bulgarian", "BGR-0"),
+    ("chinese", "CHN-0"),
+    ("czech-slovak", "CZE-0"),
+    ("germany", "DEU-0"),
+    ("estonian", "EST-0"),
+    ("arabic", "ara-0"),
+    ("spanish-portuguese-adguard", "spa-1"),
+    ("spanish-easylist", "spa-0"),
+    ("finland", "FIN-0"),
+    ("french", "FRA-0"),
+    ("greek", "GRC-0"),
+    ("serbo-croatian", "HRV-0"),
+    ("hungarian", "HUN-0"),
+    ("abpindo", "IDN-0"),
+    ("hebrew", "ISR-0"),
+    ("indian", "IND-0"),
+    ("persian", "IRN-0"),
+    ("icelandic", "ISL-0"),
+    ("italy", "ITA-0"),
+    ("japanese", "JPN-1"),
+    ("korean", "KOR-1"),
+    ("lithuania", "LTU-0"),
+    ("latvia", "LVA-0"),
+    ("macedonian", "MKD-0"),
+    ("dutch", "NLD-0"),
+    ("nordic", "NOR-0"),
+    ("polish", "POL-0"),
+    ("romanian", "ROU-1"),
+    ("ru-adlist", "RUS-0"),
+    ("swedish", "SWE-1"),
+    ("slovenian", "SVN-0"),
+    ("thailand", "THA-0"),
+    ("turkish", "TUR-0"),
+    ("ukrainian", "UKR-0"),
+    ("vietnamese", "VIE-1"),
+]
+
+with open(sys.argv[1], encoding="utf-8") as f:
+    catalogo = json.load(f)
+
+mancanti = []
+for nome, id_lista in liste:
+    voce = catalogo.get(id_lista)
+    if not voce:
+        mancanti.append(id_lista)
+        continue
+
+    url = voce.get("contentURL")
+    if isinstance(url, list):
+        url = url[0] if url else None
+
+    if not url:
+        mancanti.append(id_lista)
+        continue
+
+    print(f"{nome}.txt|{url}")
+
+if mancanti:
+    print("Liste non trovate nel catalogo: " + ", ".join(mancanti), file=sys.stderr)
+    sys.exit(1)
+PY
+then
+    echo "Errore: impossibile leggere il catalogo delle liste." >&2
+    exit 1
+fi
+
+errori=0
+
+while IFS='|' read -r nome url; do
+    file="$DEST/$nome"
+    tmp="$(mktemp "$DEST/.download.XXXXXX")" || { errori=1; continue; }
+
+    if curl -fLsS --retry 3 --connect-timeout 20 --max-time 180 \
+        --compressed -o "$tmp" "$url" && [[ -s "$tmp" ]]; then
+        mv -f -- "$tmp" "$file"
+        echo "OK: $nome"
+    else
+        rm -f -- "$tmp"
+        echo "ERRORE: $nome" >&2
+        errori=1
+    fi
+done < "$ELENCO"
+
+echo "File salvati/aggiornati in: $DEST"
+(( errori == 0 ))
 ```
 
-```url
-https://ublockorigin.pages.dev/filters/annoyances.txt
-```
 
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easycookie.txt
-```
 
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboyannoyance.txt
-```
-
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/antiadblock.txt
-```
-
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-ai.txt
-```
-
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-chat.txt
-```
-
-```url
-https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist-notifications.txt
-```
-
-```url
-https://gitlab.com/DandelionSprout/adfilt/-/raw/master/LegitimateURLShortener.txt
-```
-
-```url
-https://raw.githubusercontent.com/yokoffing/filterlists/main/block_third_party_fonts.txt
-```
-
-```url
-https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt
-```
-
-```url
-https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/tif.mini.txt
-```
-
-```url
-https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-```
-
-```url
-https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist-basic.txt
-```
-
-```url
-https://raw.githubusercontent.com/Esl1h/Brave-Filters-and-Scriptlets/main/filters
-```
-
-```url
-https://raw.githubusercontent.com/liamperritt/timesaving-adblock-filters/refs/heads/main/lists/InstagramAntiDoomScrolling.txt
-```
-
-```url
-https://www.i-dont-care-about-cookies.eu/abp/
-```
-
-```url
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblock-plus&showintro=0&mimetype=plaintext
-```
-
-```url
-https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
-```
-
-## ⭐ Contributi
-
-Se hai trovato una lista utile che non è ancora presente, invia una **Pull Request**!,
-
-** Per una navigazione più pulita e sicura su Brave.**
