@@ -1,16 +1,31 @@
+# SiteBlock
 
-# UB sources
-```Installazione-e-aggiornamento-liste-UB
+## Liste
+
+- [NoPorno](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoPorno.txt)
+- [NoGames](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoGames.txt)
+- [NoFakeNews](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoFakeNews.txt)
+
+## Installazione e aggiornamento
+
+Lo script scarica le liste nella cartella da cui viene eseguito.
+
+```bash
+#!/usr/bin/env bash
+
 DEST="$PWD"
 errori=0
 
 while IFS='|' read -r nome url; do
     file="$DEST/$nome"
-    tmp="$(mktemp "$DEST/.download.XXXXXX")" || { errori=1; continue; }
+    tmp="$(mktemp "$DEST/.download.XXXXXX")" || {
+        echo "ERRORE: impossibile creare un file temporaneo per $nome" >&2
+        errori=1
+        continue
+    }
 
     if curl -fLsS --retry 3 --connect-timeout 20 --max-time 180 --compressed \
-        -o "$tmp" "$url" && [[ -s "$tmp" ]]; then
-        mv -f -- "$tmp" "$file"
+        -o "$tmp" "$url" && [[ -s "$tmp" ]] && mv -f -- "$tmp" "$file"; then
         echo "OK: $nome"
     else
         rm -f -- "$tmp"
@@ -18,161 +33,64 @@ while IFS='|' read -r nome url; do
         errori=1
     fi
 done <<'LISTE'
-ublock-ads.txt|https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt
-ublock-badware.txt|https://ublockorigin.github.io/uAssetsCDN/filters/badware.txt
-ublock-privacy.txt|https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt
-ublock-quick-fixes.txt|https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.txt
-ublock-unbreak.txt|https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.txt
-ublock-annoyances.txt|https://ublockorigin.github.io/uAssetsCDN/filters/annoyances.txt
-ublock-cookie-notices.txt|https://ublockorigin.github.io/uAssetsCDN/filters/annoyances-cookies.txt
-easylist.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist.txt
-adguard-ads.txt|https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
-adguard-mobile-ads.txt|https://filters.adtidy.org/extension/ublock/filters/11.txt
-easyprivacy.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easyprivacy.txt
-legitimate-url-shortener.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-url-tracking-protection.txt|https://ublockorigin.github.io/uAssetsCDN/filters/privacy-removeparam.txt
-block-outsider-intrusion-into-lan.txt|https://ublockorigin.github.io/uAssetsCDN/filters/lan-block.txt
-online-malicious-url-blocklist.txt|https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-vivaldi-online.txt
-phishing-url-blocklist.txt|https://malware-filter.gitlab.io/phishing-filter/phishing-filter.txt
-peter-lowes-ad-and-tracking-servers.txt|https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext
-dan-pollocks-hosts.txt|https://someonewhocares.org/hosts/hosts
-easylist-cookie-notices.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-cookies.txt
-adguard-cookie-notices.txt|https://filters.adtidy.org/extension/ublock/filters/18.txt
-easylist-social-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-social.txt
-adguard-social-widgets.txt|https://filters.adtidy.org/extension/ublock/filters/4.txt
-fanboy-anti-facebook.txt|https://secure.fanboy.co.nz/fanboy-antifacebook.txt
-easylist-other-annoyances.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-annoyances.txt
-easylist-ai-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-ai.txt
-easylist-chat-widgets.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-chat.txt
-easylist-newsletter-notices.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
-easylist-notifications.txt|https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-notifications.txt
-adguard-mobile-app-banners.txt|https://filters.adtidy.org/extension/ublock/filters/20.txt
-adguard-other-annoyances.txt|https://filters.adtidy.org/extension/ublock/filters/21.txt
-adguard-popup-overlays.txt|https://filters.adtidy.org/extension/ublock/filters/19.txt
-adguard-widgets.txt|https://filters.adtidy.org/extension/ublock/filters/22.txt
+NoPorno.txt|https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoPorno.txt
+NoGames.txt|https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoGames.txt
+NoFakeNews.txt|https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoFakeNews.txt
 LISTE
 
 echo "File scaricati/aggiornati in: $DEST"
-(( errori == 0 ))
+exit "$errori"
 ```
 
-# Regional UB sources
+# Clean
 
-```Installazione-e-aggiornamento-liste-Regionali
+## Liste
+
+- [CleanFacebook](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanFacebook.txt)
+- [CleanYoutube](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanYoutube.txt)
+
+## Installazione e aggiornamento
+
+Lo script scarica le liste nella cartella da cui viene eseguito.
+
+```bash
+#!/usr/bin/env bash
+
 DEST="$PWD"
-META="$(mktemp)" || exit 1
-ELENCO="$(mktemp)" || { rm -f "$META"; exit 1; }
-trap 'rm -f "$META" "$ELENCO"' EXIT
-
-if ! curl -fLsS --retry 3 --connect-timeout 20 --max-time 60 \
-    -o "$META" \
-    "https://raw.githubusercontent.com/gorhill/uBlock/master/assets/assets.json"; then
-    echo "Errore: impossibile scaricare il catalogo delle liste." >&2
-    exit 1
-fi
-
-if ! python3 - "$META" > "$ELENCO" <<'PY'
-import json
-import sys
-
-liste = [
-    ("albania", "ALB-0"),
-    ("bulgarian", "BGR-0"),
-    ("chinese", "CHN-0"),
-    ("czech-slovak", "CZE-0"),
-    ("germany", "DEU-0"),
-    ("estonian", "EST-0"),
-    ("arabic", "ara-0"),
-    ("spanish-portuguese-adguard", "spa-1"),
-    ("spanish-easylist", "spa-0"),
-    ("finland", "FIN-0"),
-    ("french", "FRA-0"),
-    ("greek", "GRC-0"),
-    ("serbo-croatian", "HRV-0"),
-    ("hungarian", "HUN-0"),
-    ("abpindo", "IDN-0"),
-    ("hebrew", "ISR-0"),
-    ("indian", "IND-0"),
-    ("persian", "IRN-0"),
-    ("icelandic", "ISL-0"),
-    ("italy", "ITA-0"),
-    ("japanese", "JPN-1"),
-    ("korean", "KOR-1"),
-    ("lithuania", "LTU-0"),
-    ("latvia", "LVA-0"),
-    ("macedonian", "MKD-0"),
-    ("dutch", "NLD-0"),
-    ("nordic", "NOR-0"),
-    ("polish", "POL-0"),
-    ("romanian", "ROU-1"),
-    ("ru-adlist", "RUS-0"),
-    ("swedish", "SWE-1"),
-    ("slovenian", "SVN-0"),
-    ("thailand", "THA-0"),
-    ("turkish", "TUR-0"),
-    ("ukrainian", "UKR-0"),
-    ("vietnamese", "VIE-1"),
-]
-
-with open(sys.argv[1], encoding="utf-8") as f:
-    catalogo = json.load(f)
-
-mancanti = []
-for nome, id_lista in liste:
-    voce = catalogo.get(id_lista)
-    if not voce:
-        mancanti.append(id_lista)
-        continue
-
-    url = voce.get("contentURL")
-    if isinstance(url, list):
-        url = url[0] if url else None
-
-    if not url:
-        mancanti.append(id_lista)
-        continue
-
-    print(f"{nome}.txt|{url}")
-
-if mancanti:
-    print("Liste non trovate nel catalogo: " + ", ".join(mancanti), file=sys.stderr)
-    sys.exit(1)
-PY
-then
-    echo "Errore: impossibile leggere il catalogo delle liste." >&2
-    exit 1
-fi
-
 errori=0
 
 while IFS='|' read -r nome url; do
     file="$DEST/$nome"
-    tmp="$(mktemp "$DEST/.download.XXXXXX")" || { errori=1; continue; }
+    tmp="$(mktemp "$DEST/.download.XXXXXX")" || {
+        echo "ERRORE: impossibile creare un file temporaneo per $nome" >&2
+        errori=1
+        continue
+    }
 
-    if curl -fLsS --retry 3 --connect-timeout 20 --max-time 180 \
-        --compressed -o "$tmp" "$url" && [[ -s "$tmp" ]]; then
-        mv -f -- "$tmp" "$file"
+    if curl -fLsS --retry 3 --connect-timeout 20 --max-time 180 --compressed \
+        -o "$tmp" "$url" && [[ -s "$tmp" ]] && mv -f -- "$tmp" "$file"; then
         echo "OK: $nome"
     else
         rm -f -- "$tmp"
         echo "ERRORE: $nome" >&2
         errori=1
     fi
-done < "$ELENCO"
+done <<'LISTE'
+CleanFacebook.txt|https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanFacebook.txt
+CleanYoutube.txt|https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanYoutube.txt
+LISTE
 
-echo "File salvati/aggiornati in: $DEST"
-(( errori == 0 ))
+echo "File scaricati/aggiornati in: $DEST"
+exit "$errori"
 ```
 
-### link SiteBlock:
-https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoPorno.txt
-https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoGames.txt
-https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoFakeNews.txt
+# Plus
 
-### link  Clean
-https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanFacebook.txt
-https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanYoutube.txt
+## Liste
 
-### link Plus
+- [AdGuard Tracking Protection](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/adguard-tracking-protection.txt)
+- [Hagezi Native Amazon](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-amazon.txt)
+- [Hagezi Native Apple](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-apple.txt)
+- [Hagezi Native Microsoft](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-microsoft.txt)
 
-
+Per installare e aggiornare queste liste, usa lo script della sezione **Plus sources**.
