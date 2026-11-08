@@ -125,3 +125,7 @@
 ||nmetrics.samsung.com^
 ||samsung-com.112.2o7.net^
 ||analytics-api.samsunghealthcn.com^
+||ads.js^
+||pagead.js^
+||advertisement.js^
+||analytics.js^
