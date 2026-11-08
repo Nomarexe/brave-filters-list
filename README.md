@@ -164,5 +164,15 @@ echo "File salvati/aggiornati in: $DEST"
 (( errori == 0 ))
 ```
 
+### link SiteBlock:
+https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoPorno.txt
+https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoGames.txt
+https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/SiiteBlock/NoFakeNews.txt
+
+### link  Clean
+https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanFacebook.txt
+https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanYoutube.txt
+
+### link Plus
 
 
