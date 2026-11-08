@@ -103,6 +103,7 @@
 - [Hagezi Native Amazon](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-amazon.txt)
 - [Hagezi Native Apple](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-apple.txt)
 - [Hagezi Native Microsoft](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/hagezi-native-microsoft.txt)
+- [PrivacyBadGer](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Plus/PrivacyBadGer-Block.txt)
 # Installazione e aggiornamento liste UB
 
 ```bash
