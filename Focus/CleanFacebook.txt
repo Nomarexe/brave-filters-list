@@ -1,95 +1,8 @@
-! ===== Regole generali =====
 [Adblock Plus 2.8]
-/hads-
+apps.facebook.com##div[style="margin: 0px; width: 760px; height: 90px; text-align: center; vertical-align: middle;"]
 
-! ===== atdmt.com =====
 ||atdmt.com^$third-party
 
-! ===== facebook.com =====
-@@||www.facebook.com/ads/$elemhide
-@@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=www.facebook.com
-apps.facebook.com##div[style="margin: 0px; width: 760px; height: 90px; text-align: center; vertical-align: middle;"]
-facebook.com###MessagingNetegoWrapper
-facebook.com###headerArea
-facebook.com###home_sponsor_nile
-facebook.com###home_stream > .uiUnifiedStory[data-ft*="\"ei\":\""]
-facebook.com###leaderboard
-facebook.com###pagelet_ads_when_no_friend_list_suggestion
-facebook.com###pagelet_games_rhc
-facebook.com###pagelet_growth_expanding_cta
-facebook.com##.-cx-PRIVATE-fbAdUnit__root
-facebook.com##.-cx-PRIVATE-fbEmu__root
-facebook.com##.-cx-PRIVATE-fbFacebarTypeaheadToken__sponsored
-facebook.com##.-cx-PRIVATE-snowliftAds__root
-facebook.com##.-cx-PRIVATE-spyml__story
-facebook.com##.-cx-PUBLIC-fbAdUnit__root
-facebook.com##._24n
-facebook.com##._24o
-facebook.com##._3qj-
-facebook.com##._4u8
-facebook.com##.adv
-facebook.com##.egoOrganicColumn
-facebook.com##.ego_spo
-facebook.com##.fbAdUnit
-facebook.com##.fbEmu
-facebook.com##.fbEmuBlock
-facebook.com##.fbEmuComboList
-facebook.com##.fbEmuEgo
-facebook.com##.fbEmuEgoUnit
-facebook.com##.fbEmuLink
-facebook.com##.fbPhotoAdsCol
-facebook.com##.fbTimelineSideAds
-facebook.com##.fixedAux .pbm
-facebook.com##.generic_dialog.pop_dialog.generic_dialog_modal
-facebook.com##.muffin.group
-facebook.com##.ownsection[role="option"]
-facebook.com##[data-referrer="pagelet_side_ads"]
-facebook.com##[href^="/ads/adboard/"]
-facebook.com##a[ajaxify^="/ajax/emu/end.php?"]
-facebook.com##a[href^="/ajax/emu/end.php?"]
-facebook.com##div[class="ego_column _5qrt"]
-facebook.com##div[class="ego_column _8_9"]
-facebook.com##div[class="ego_column pagelet _5qrt"]
-facebook.com##div[class="ego_column pagelet"]
-facebook.com##div[class="ego_column"]
-facebook.com##div[id^="sponsoredTickerStory_"]
-facebook.com##div[id^="substream_"] ._5jmm[data-dedupekey][data-cursor][data-ftr="1"][data-fte="1"]:not([data-timestamp])
-facebook.com##div[id^="substream_"] div[data-ft*="\"ei\":\""]
-facebook.com##div[id^="topnews_main_stream_"] div[data-ft*="\"ei\":\""]
-facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
-m.facebook.com,touch.facebook.com##.aymlCoverFlow
-m.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
-m.facebook.com,touch.facebook.com##.pyml
-m.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
-m.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
-m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
-m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-||fbcdn.net^*/flyers/$domain=facebook.com
-www.facebook.com##.x1y1aw1k > div > div > div > div > .xyen2ro.x1uc6qws.x1n2onr6 > .x1y1aw1k.xwib8y2
-www.facebook.com##.x1hc1fzr .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div
-www.facebook.com##.x1cnzs8.xjkvuk6.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6
-www.facebook.com##.x3su7b9.x1tr5nd9.xp1r0qw.xsag5q8.xz9dl7a.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(2) > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div > .x1q0g3np.xozqiw3.x6s0dn4.x1qughib.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z.x9f619
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(3) > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(2)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(6)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(20)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(17)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(18)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(11)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(9)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(8)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(21)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(19)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(16)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(15)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(13)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(12)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(14)
-www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(10)
-www.facebook.com##.x1iyjqo2 > div > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div > .x1q0g3np.xozqiw3.x6s0dn4.x1qughib.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z.x9f619
-www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xq1qtft.x1n2onr6.x1odjw0f.x1oyok0e.xwo3gff.xx8ngbg.x2lwn1j.xs83m0k.x1iyjqo2.x1l7klhg.xjx87ck.x1yqm8si.xfk6m8.x1rohswg.x1pq812k.x1ja2u2z.x6ikm8r.xdt5ytf.x78zum5.x5lxg6s.x1q594ok.xb57i2i > .x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5
-||facebook.com/*?modules*AYMTHomepagePanelTypedLogger$important
 ||facebook.com/*?modules*AbandonedSessionSurvey$important
 ||facebook.com/*?modules*AdAllocationIntegrityGapsInfo$important
 ||facebook.com/*?modules*AdAllocationIntegrityUtils$important
@@ -100,16 +13,20 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*AdInterfacesUiLogger$important
 ||facebook.com/*?modules*AdPageMessageTypeEnum$important
 ||facebook.com/*?modules*AdPreferencesEducationPageSubtype$important
-||facebook.com/*?modules*AdsAPIImageFields$important
+||facebook.com/*?modules*ads-lib-formatters$important
+||facebook.com/*?modules*ads-lib-urllib$important
 ||facebook.com/*?modules*AdsAdobjectDataLoadStateStore$important
+||facebook.com/*?modules*AdsAPIImageFields$important
 ||facebook.com/*?modules*AdsAppVisibilityFocusDataActionFlux$important
 ||facebook.com/*?modules*AdsCollectionsConstants$important
 ||facebook.com/*?modules*AdsConversionPixelStatusUI$important
 ||facebook.com/*?modules*AdsEmptyValue$important
 ||facebook.com/*?modules*AdsError$important
+||facebook.com/*?modules*adsExcelGKCheck$important
 ||facebook.com/*?modules*AdsFeedbackConstants$important
 ||facebook.com/*?modules*AdsFilterChangeTypes$important
 ||facebook.com/*?modules*AdsGenericFilter$important
+||facebook.com/*?modules*adsGetDateFromAdObject$important
 ||facebook.com/*?modules*AdsGetter$important
 ||facebook.com/*?modules*AdsGuidanceUnifiedNavigationTip$important
 ||facebook.com/*?modules*AdsIntelligentBlueTipContainer$important
@@ -119,15 +36,15 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*AdsInterfacesComponentsLogger$important
 ||facebook.com/*?modules*AdsInterfacesLogger$important
 ||facebook.com/*?modules*AdsInterfacesRouteConstants$important
-||facebook.com/*?modules*AdsLWIErrorCode$important
-||facebook.com/*?modules*AdsLWISimilarPromotionsNoticeContainer$important
 ||facebook.com/*?modules*AdsLoadState$important
 ||facebook.com/*?modules*AdsLogger$important
 ||facebook.com/*?modules*AdsLoggerConstants$important
+||facebook.com/*?modules*AdsLWIErrorCode$important
+||facebook.com/*?modules*AdsLWISimilarPromotionsNoticeContainer$important
 ||facebook.com/*?modules*AdsMouseStateStore$important
-||facebook.com/*?modules*AdsPEReporting$important
 ||facebook.com/*?modules*AdsPagerConstants$important
 ||facebook.com/*?modules*AdsPagerDispatcher$important
+||facebook.com/*?modules*AdsPEReporting$important
 ||facebook.com/*?modules*AdsPerfTiming$important
 ||facebook.com/*?modules*AdsPixelDialogTypes$important
 ||facebook.com/*?modules*AdsPixelEventNames$important
@@ -167,6 +84,7 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*AppLoggerUtils$important
 ||facebook.com/*?modules*AsyncRequestNectarLogging$important
 ||facebook.com/*?modules*AttachmentRelatedShareTimingConstants$important
+||facebook.com/*?modules*AYMTHomepagePanelTypedLogger$important
 ||facebook.com/*?modules*BoostedComponentPromotionsManagerStrings$important
 ||facebook.com/*?modules*BootloaderEventsTypedLogger$important
 ||facebook.com/*?modules*BootloaderLoggerUtil$important
@@ -190,16 +108,17 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*EntstreamAttachmentRelatedFBVideo$important
 ||facebook.com/*?modules*EntstreamAttachmentRelatedShare$important
 ||facebook.com/*?modules*ExternalTrackingTag$important
+||facebook.com/*?modules*FbFeedAttachmentRelatedShare$important
 ||facebook.com/*?modules*FBLynxWrapper$important
 ||facebook.com/*?modules*FBPaymentsPerfLogger$important
 ||facebook.com/*?modules*FBStoriesLoggingHelper$important
-||facebook.com/*?modules*FbFeedAttachmentRelatedShare$important
 ||facebook.com/*?modules*FeedAdsClickLogger$important
 ||facebook.com/*?modules*FeedAdsGapRuleViolationDetectionFix$important
 ||facebook.com/*?modules*FeedStoryOptionMenuTypedLogger$important
 ||facebook.com/*?modules*FeedTrackingAsync$important
 ||facebook.com/*?modules*FunnelLogger$important
 ||facebook.com/*?modules*FunnelLoggerSampler$important
+||facebook.com/*?modules*GamesImpressionTracker$important
 ||facebook.com/*?modules*GBMAdCarousel$important
 ||facebook.com/*?modules*GBMAdCarouselItem$important
 ||facebook.com/*?modules*GBMAdMasonryGrid$important
@@ -208,9 +127,11 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*GBMCMSAdMasonryGrid$important
 ||facebook.com/*?modules*GBMLeaderboardAdCarouselItem$important
 ||facebook.com/*?modules*GBMLeaderboardAdMasonryGrid$important
-||facebook.com/*?modules*GamesImpressionTracker$important
+||facebook.com/*?modules*getEventTarget$important
 ||facebook.com/*?modules*HomeRHCAdsBasicRefresh$important
 ||facebook.com/*?modules*InteractionTracker$important
+||facebook.com/*?modules*isAdsExcelAddinURI$important
+||facebook.com/*?modules*isLinkshimURI$important
 ||facebook.com/*?modules*ItunesDetector$important
 ||facebook.com/*?modules*ItunesPluginLogging$important
 ||facebook.com/*?modules*KappaWrapper$important
@@ -220,12 +141,19 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*MAdsPrefsFeedback$important
 ||facebook.com/*?modules*MAdsScrollOnMarginTap$important
 ||facebook.com/*?modules*MAdsUtils$important
+||facebook.com/*?modules*MainThreadPerformance$important
+||facebook.com/*?modules*MeasurePeopleTypedLogger$important
+||facebook.com/*?modules*MessengerDotComPromotionActionURL$important
+||facebook.com/*?modules*MessengerPromotionData$important
+||facebook.com/*?modules*MessengerWebDeltasTypedLogger$important
+||facebook.com/*?modules*MessengerWebGraphQLTypedLogger
 ||facebook.com/*?modules*MFeedAdsGapRuleViolationDetection$important
 ||facebook.com/*?modules*MFeedChaining$important
 ||facebook.com/*?modules*MLinkshim$important
-||facebook.com/*?modules*MNAdsLogMessageUtils$important
 ||facebook.com/*?modules*MNAdsLoggerEventEnum$important
+||facebook.com/*?modules*MNAdsLogMessageUtils$important
 ||facebook.com/*?modules*MNAdsMessageUtils$important
+||facebook.com/*?modules*MobileZeroRewriteURL$important
 ||facebook.com/*?modules*MPymkFunnelLogger$important
 ||facebook.com/*?modules*MQuickPromotion$important
 ||facebook.com/*?modules*MRecentSearchesUpdater$important
@@ -236,13 +164,6 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*MTokenizerWithSuggestions$important
 ||facebook.com/*?modules*MTypeaheadNullstateSource$important
 ||facebook.com/*?modules*MViewableImpressionTracking$important
-||facebook.com/*?modules*MainThreadPerformance$important
-||facebook.com/*?modules*MeasurePeopleTypedLogger$important
-||facebook.com/*?modules*MessengerDotComPromotionActionURL$important
-||facebook.com/*?modules*MessengerPromotionData$important
-||facebook.com/*?modules*MessengerWebDeltasTypedLogger$important
-||facebook.com/*?modules*MessengerWebGraphQLTypedLogger
-||facebook.com/*?modules*MobileZeroRewriteURL$important
 ||facebook.com/*?modules*NetEgo$important
 ||facebook.com/*?modules*NetEgoShowcase$important
 ||facebook.com/*?modules*NonBlockingIFrame$important
@@ -261,7 +182,6 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*ReactComposerFunFactSinglePromptTaggerContainer$important
 ||facebook.com/*?modules*ReactComposerMagicTagSurvey$important
 ||facebook.com/*?modules*ResourceTimingBootloaderHelper$important
-||facebook.com/*?modules*SLPerfTypedLogger$important
 ||facebook.com/*?modules*SavedForLaterChromeExtensionToastNux$important
 ||facebook.com/*?modules*SearchClientFunnelTypedLogger$important
 ||facebook.com/*?modules*SearchFunnelLogger$important
@@ -270,9 +190,11 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*SearchSuggestionsHighlighter$important
 ||facebook.com/*?modules*ShareDialogMessageAudience$important
 ||facebook.com/*?modules*ShowsPYMFUtils$important
+||facebook.com/*?modules*SLPerfTypedLogger$important
 ||facebook.com/*?modules*TahoeBackAffordanceContainer$important
 ||facebook.com/*?modules*TahoeUpNextOverlayAndEndScreen$important
 ||facebook.com/*?modules*TrackingPixel$important
+||facebook.com/*?modules*trackReferrer$important
 ||facebook.com/*?modules*TypeaheadMetricReporter$important
 ||facebook.com/*?modules*TypingDetector$important
 ||facebook.com/*?modules*UFIOrderingModeSelectorContainer$important
@@ -290,11 +212,11 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*VisibilityWatcher$important
 ||facebook.com/*?modules*WebBrowserDimensionsResizeTypedLogger$important
 ||facebook.com/*?modules*WebDevicePerfInfoLogging$important
-||facebook.com/*?modules*XAYMTPanelSaveSettingsController$important
-||facebook.com/*?modules*XAYMTPostPickerController$important
 ||facebook.com/*?modules*XAdPreferencesNUXController$important
 ||facebook.com/*?modules*XAdsCMController$important
 ||facebook.com/*?modules*XAdsPreferencesFeedbackController$important
+||facebook.com/*?modules*XAYMTPanelSaveSettingsController$important
+||facebook.com/*?modules*XAYMTPostPickerController$important
 ||facebook.com/*?modules*XBrowseLoggerController$important
 ||facebook.com/*?modules*XCommerceResponse$important
 ||facebook.com/*?modules*XEducationPromotionTriggerRecordController$important
@@ -305,8 +227,8 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*XFeedChainingAsyncController$important
 ||facebook.com/*?modules*XFeedEgoImpressionLoggingController$important
 ||facebook.com/*?modules*XFundraiserAttachmentPivotController$important
-||facebook.com/*?modules*XGBMLeaderboardAdItemContentAsyncController$important
 ||facebook.com/*?modules*XGameroomLandingPageController$important
+||facebook.com/*?modules*XGBMLeaderboardAdItemContentAsyncController$important
 ||facebook.com/*?modules*XLinkshimLogController$important
 ||facebook.com/*?modules*XMobileSearchTrendingLoggingController$important
 ||facebook.com/*?modules*XPagesLikeAndReshareShownController$important
@@ -336,11 +258,89 @@ www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja
 ||facebook.com/*?modules*XVideoQualitySurveyController$important
 ||facebook.com/*?modules*XVideoWNSSurveyController$important
 ||facebook.com/*?modules*XVideoWnsUpNextAsyncController$important
-||facebook.com/*?modules*ads-lib-formatters$important
-||facebook.com/*?modules*ads-lib-urllib$important
-||facebook.com/*?modules*adsExcelGKCheck$important
-||facebook.com/*?modules*adsGetDateFromAdObject$important
-||facebook.com/*?modules*getEventTarget$important
-||facebook.com/*?modules*isAdsExcelAddinURI$important
-||facebook.com/*?modules*isLinkshimURI$important
-||facebook.com/*?modules*trackReferrer$important
+||fbcdn.net^*/flyers/$domain=facebook.com
+facebook.com##._24n
+facebook.com##._24o
+facebook.com##._3qj-
+facebook.com##._4u8
+facebook.com##.-cx-PRIVATE-fbAdUnit__root
+facebook.com##.-cx-PRIVATE-fbEmu__root
+facebook.com##.-cx-PRIVATE-fbFacebarTypeaheadToken__sponsored
+facebook.com##.-cx-PRIVATE-snowliftAds__root
+facebook.com##.-cx-PRIVATE-spyml__story
+facebook.com##.-cx-PUBLIC-fbAdUnit__root
+facebook.com##.adv
+facebook.com##.ego_spo
+facebook.com##.egoOrganicColumn
+facebook.com##.fbAdUnit
+facebook.com##.fbEmu
+facebook.com##.fbEmuBlock
+facebook.com##.fbEmuComboList
+facebook.com##.fbEmuEgo
+facebook.com##.fbEmuEgoUnit
+facebook.com##.fbEmuLink
+facebook.com##.fbPhotoAdsCol
+facebook.com##.fbTimelineSideAds
+facebook.com##.fixedAux .pbm
+facebook.com##.generic_dialog.pop_dialog.generic_dialog_modal
+facebook.com##.muffin.group
+facebook.com##.ownsection[role="option"]
+facebook.com##[data-referrer="pagelet_side_ads"]
+facebook.com##[href^="/ads/adboard/"]
+facebook.com###headerArea
+facebook.com###home_sponsor_nile
+facebook.com###home_stream > .uiUnifiedStory[data-ft*="\"ei\":\""]
+facebook.com###leaderboard
+facebook.com###MessagingNetegoWrapper
+facebook.com###pagelet_ads_when_no_friend_list_suggestion
+facebook.com###pagelet_games_rhc
+facebook.com###pagelet_growth_expanding_cta
+facebook.com##a[ajaxify^="/ajax/emu/end.php?"]
+facebook.com##a[href^="/ajax/emu/end.php?"]
+facebook.com##div[class="ego_column _5qrt"]
+facebook.com##div[class="ego_column _8_9"]
+facebook.com##div[class="ego_column pagelet _5qrt"]
+facebook.com##div[class="ego_column pagelet"]
+facebook.com##div[class="ego_column"]
+facebook.com##div[id^="sponsoredTickerStory_"]
+facebook.com##div[id^="substream_"] ._5jmm[data-dedupekey][data-cursor][data-ftr="1"][data-fte="1"]:not([data-timestamp])
+facebook.com##div[id^="substream_"] div[data-ft*="\"ei\":\""]
+facebook.com##div[id^="topnews_main_stream_"] div[data-ft*="\"ei\":\""]
+facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
+
+m.facebook.com,touch.facebook.com##.aymlCoverFlow
+m.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
+m.facebook.com,touch.facebook.com##.pyml
+m.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
+m.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
+m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
+m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+
+@@||www.facebook.com/ads/$elemhide
+@@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=www.facebook.com
+www.facebook.com##.x1cnzs8.xjkvuk6.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6
+www.facebook.com##.x1hc1fzr .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div
+www.facebook.com##.x1iyjqo2 > div > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div > .x1q0g3np.xozqiw3.x6s0dn4.x1qughib.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z.x9f619
+www.facebook.com##.x1y1aw1k > div > div > div > div > .xyen2ro.x1uc6qws.x1n2onr6 > .x1y1aw1k.xwib8y2
+www.facebook.com##.x3su7b9.x1tr5nd9.xp1r0qw.xsag5q8.xz9dl7a.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div
+www.facebook.com###right_rail_container > .x1t2pt76.xedcshv.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xq1qtft.x1n2onr6.x1odjw0f.x1oyok0e.xwo3gff.xx8ngbg.x2lwn1j.xs83m0k.x1iyjqo2.x1l7klhg.xjx87ck.x1yqm8si.xfk6m8.x1rohswg.x1pq812k.x1ja2u2z.x6ikm8r.xdt5ytf.x78zum5.x5lxg6s.x1q594ok.xb57i2i > .x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(10)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(11)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(12)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(13)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(14)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(15)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(16)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(17)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(18)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(19)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(2)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(2) > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl > .x1r8uycs.x1gtkyd9.x12pbpz1.x3su7b9.x1tr5nd9.xbktkl8.x1ws5yxj.xw01apr.x4cne27.xifccgj.xeuugli.xl56j7k.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x1qjc9v5.html-div > .x1q0g3np.xozqiw3.x6s0dn4.x1qughib.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z.x9f619
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(20)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(21)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(3) > .x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .xf159sx.xmzvs34.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619 > .x1lliihq.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xeuugli.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x2lah0s.xdl72j9.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1qjc9v5.x1i10hfl
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(6)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(8)
+www.facebook.com##li.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-li:nth-of-type(9)
+
+/hads-

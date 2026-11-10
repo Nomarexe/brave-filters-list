@@ -1,0 +1,18 @@
+github.com##.color-bg-default.border-right.hide-sm.hide-md.border-bottom.color-border-muted.col-lg-3.col-md-4.feed-left-sidebar
+github.com##.CopilotMenu__oPrKz5.appHeaderButton__sQ5HIU.prc-Button-ButtonBase-9n-Xk
+github.com##.flex-lg-nowrap.flex-wrap.flex-lg-row.flex-column-reverse.flex-items-center.flex-justify-center.d-flex
+github.com##.js-notification-inboxes > nav-list > .ActionListWrap > .ActionListItem--navActive.ActionListItem > .ActionListContent--visual16.ActionListContent
+github.com##.prc-Stack-Stack-UQ9k6.hide-md.hide-sm > a.prc-Button-IconButton-fyge7.appHeaderButton__sQ5HIU.prc-Button-ButtonBase-9n-Xk
+github.com##.prc-Stack-Stack-UQ9k6.left__VBt0gv
+github.com##.prc-Stack-Stack-UQ9k6.rightWithResponsiveCreateButton__JePGAt.right__5m36ST > .prc-Button-IconButton-fyge7.appHeaderButton__sQ5HIU.prc-Button-ButtonBase-9n-Xk
+github.com###_r_2c_
+github.com###_r_2d_
+github.com###_r_3o_
+github.com###_r_3r_
+github.com###_r_47_ > .prc-ActionList-ActionListSubContent-gKsFp > .prc-ActionList-ItemLabel-81ohH
+github.com###_r_4q_
+github.com###_r_4r_
+github.com###_r_4s_
+github.com###blob-view-header-copilot-icon
+github.com##div.prc-ButtonGroup-Item-PqvDl > .prc-Button-IconButton-fyge7.appHeaderButton__sQ5HIU.prc-Button-ButtonBase-9n-Xk
+github.com##li.prc-ActionList-ActionListItem-So4vC:nth-of-type(9)

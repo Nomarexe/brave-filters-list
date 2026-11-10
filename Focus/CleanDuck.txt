@@ -1,0 +1,12 @@
+duck.ai##.grLfZePkxJNdDZ1I96bd.bY7dwMcFNAuFOqJUzvlV
+duck.ai##.hltVDGcNJMAcENDxk90c
+duck.ai##.kc6VuoBdpB9ul8xqj6kl
+duck.ai##.p_AyzcYv2Z28sGNhcHEN.EJh4QwSCqnNfNihtKtUg
+duck.ai##.qu8l8y0T63L2c6Y_Ex2F.HmVD0odzmaobZhTx3jzd
+duckduckgo.com##.footer
+duckduckgo.com##.footer__addons
+duckduckgo.com##.s_aX02AKO_sKezlF_w3n.bYzmzE1mNswz15hu88gN.mDfTLfECeDUwedENpz0Z
+duckduckgo.com##.xWVFEW_kM7bYLASLNfsZ.rXBzGoYc_uM83jRoODrM.wuwdN2SgDOTwsnBO5PI7.h3EKGeHmRRkjbMqYfNUi.WVvM2VZmaSCvFUapMaYQ > .FMPme3X940xAt4SKPFuw
+duckduckgo.com##.Yy4FVTLlXDKk7XaBX_nT._I0sotAoeGtAJzkzyutg.fIgpqHfKgUmmk5lqmvL5
+noai.duckduckgo.com##.js-header-aside.header--aside
+noai.duckduckgo.com##.react-feedback-prompt-mvc-wrapper--related_searches.react-feedback-prompt-mvc-wrapper > .AlPVsxUsFt3bnuOvg6hI.wZ4JdaHxSAhGy1HoNVja.ZvcE0ToM7Sfi6iwk7KiJ

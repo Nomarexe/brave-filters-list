@@ -1,29 +1,28 @@
-www.youtube.com##.ytd-masthead.style-scope > yt-button-shape > .ytSpecButtonShapeNextMainstagePadding.ytSpecButtonShapeNextMainstageIconSize.ytSpecButtonShapeNextEnableBackdropFilterExperiment.ytSpecButtonShapeNextIconOnlyDefault.ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextText.ytSpecButtonShapeNextHost
-www.youtube.com###buttons > ytd-button-renderer.ytd-masthead.style-scope
-www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
-www.youtube.com##.ytSpecIconBadgeShapeIcon > .ytIconWrapperHost > .ytSpecIconShapeHost.yt-icon-shape > div
-www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2) > .ytd-menu-renderer.style-scope.ytSpecButtonViewModelHost > .ytSpecButtonShapeNextMainstagePadding.ytSpecButtonShapeNextMainstageIconSize.ytSpecButtonShapeNextEnableBackdropFilterExperiment.ytSpecButtonShapeNextIconLeading.ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal.ytSpecButtonShapeNextHost > .ytSpecTouchFeedbackShapeTouchResponse.ytSpecTouchFeedbackShapeHost > .ytSpecTouchFeedbackShapeFill
-www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
-www.youtube.com###button-shape
-www.youtube.com###section-items > ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(1)
-www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(4)
-www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(6)
-www.youtube.com##.ytd-guide-downloads-entry-renderer.style-scope
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(6)
-www.youtube.com###copyright
-www.youtube.com##.ytChipsShelfViewModelHost > div
-www.youtube.com##.ytSmartImationsContent > ytd-button-renderer > yt-button-shape
-www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
-www.youtube.com###content > .ytd-rich-section-renderer.style-scope
+www.youtube.com##.lucide-audio-lines.lucide
 www.youtube.com##.you-chat-entrypoint-button.ytd-menu-renderer.style-scope.ytSpecButtonViewModelHost
-www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
-www.youtube.com###contents-container > .ytd-rich-shelf-renderer.style-scope
-www.youtube.com###rich-shelf-header
+www.youtube.com##.ytChipsShelfViewModelHost > div
+www.youtube.com##.ytd-guide-downloads-entry-renderer.style-scope
+www.youtube.com##.ytd-masthead.style-scope > yt-button-shape > .ytSpecButtonShapeNextMainstagePadding.ytSpecButtonShapeNextMainstageIconSize.ytSpecButtonShapeNextEnableBackdropFilterExperiment.ytSpecButtonShapeNextIconOnlyDefault.ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextText.ytSpecButtonShapeNextHost
+www.youtube.com##.ytSmartImationsContent > ytd-button-renderer > yt-button-shape
+www.youtube.com##.ytSpecIconBadgeShapeIcon > .ytIconWrapperHost > .ytSpecIconShapeHost.yt-icon-shape > div
+www.youtube.com###button-shape
+www.youtube.com###buttons > ytd-button-renderer.ytd-masthead.style-scope
+www.youtube.com###content > .ytd-rich-section-renderer.style-scope
 www.youtube.com###content-wrapper
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com###contents-container > .ytd-rich-shelf-renderer.style-scope
+www.youtube.com###copyright
 www.youtube.com###guide-links-primary
 www.youtube.com###guide-links-secondary
-www.youtube.com##.lucide-audio-lines.lucide
-www.youtube.com##button.dark\:active\:bg-gray-700.dark\:hover\:bg-gray-800.active\:bg-gray-200.hover\:bg-gray-100.dark\:text-gray-200.text-gray-600.p-1.h-\[32px\].w-\[32px\].rounded-full.hover\:text-accent-foreground.disabled\:opacity-50.disabled\:pointer-events-none.focus-visible\:ring-offset-2.focus-visible\:ring-ring.focus-visible\:ring-2.focus-visible\:outline-none.transition-colors.ring-offset-background.font-medium.text-sm.whitespace-nowrap.justify-center.items-center.inline-flex:nth-of-type(4)
+www.youtube.com###rich-shelf-header
+www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 www.youtube.com###scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope
+www.youtube.com###section-items > ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(1)
+www.youtube.com##button.dark\:active\:bg-gray-700.dark\:hover\:bg-gray-800.active\:bg-gray-200.hover\:bg-gray-100.dark\:text-gray-200.text-gray-600.p-1.h-\[32px\].w-\[32px\].rounded-full.hover\:text-accent-foreground.disabled\:opacity-50.disabled\:pointer-events-none.focus-visible\:ring-offset-2.focus-visible\:ring-ring.focus-visible\:ring-2.focus-visible\:outline-none.transition-colors.ring-offset-background.font-medium.text-sm.whitespace-nowrap.justify-center.items-center.inline-flex:nth-of-type(4)
+www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
+www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2) > .ytd-menu-renderer.style-scope.ytSpecButtonViewModelHost > .ytSpecButtonShapeNextMainstagePadding.ytSpecButtonShapeNextMainstageIconSize.ytSpecButtonShapeNextEnableBackdropFilterExperiment.ytSpecButtonShapeNextIconLeading.ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal.ytSpecButtonShapeNextHost > .ytSpecTouchFeedbackShapeTouchResponse.ytSpecTouchFeedbackShapeHost > .ytSpecTouchFeedbackShapeFill
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(6)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(6)
+www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope

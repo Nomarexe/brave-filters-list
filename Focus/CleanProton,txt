@@ -1,0 +1,36 @@
+||account.proton.me/assets/host.png$image
+account.proton.me##.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+account.proton.me##.py-2.justify-space-between.flex-nowrap.flex
+account.proton.me##.w-full.px-4.m-3.gap-2.md\:flex-row.flex-column.items-center.flex-nowrap.mx-auto.inline-flex
+
+calendar.proton.me##.py-2.justify-space-between.flex-nowrap.flex
+calendar.proton.me##.sidebar-meter-storage.is-thin.meter-bar
+calendar.proton.me##.text-sm.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-small.button-outline-weak.button-medium.button
+
+docs.proton.me##.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+docs.proton.me##.head-max-1199\:\!\[display\:none\].text-\[\#14688d\].px-6.bg-\[\#c0e3f2\].gap-4.justify-between.items-center.shrink-0.h-\[52px\].flex.z-10
+docs.proton.me##.py-2.justify-space-between.flex-nowrap.flex
+
+drive.proton.me##.drawer-sidebar-button--notification.relative.\*\:pointer-events-none.interactive.flex.rounded.drawer-sidebar-button
+drive.proton.me##.flex.fab.button-solid-norm.button-medium.button
+drive.proton.me##.gap-2.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+drive.proton.me##.interactive-pseudo.relative.px-4.py-2.rounded-full.gap-2.items-center.flex
+drive.proton.me##.mt-2.px-3.app-infos.shrink-0
+drive.proton.me##.rounded.button-promotion--q3-sale-2026.items-center.flex.max-w-full.button-solid-norm.button-medium.button-pill.button
+drive.proton.me##.rounded.spotlight-inner
+drive.proton.me##.w-full.gap-2.items-center.flex-nowrap.flex.relative
+drive.proton.me##li.shrink-0.topnav-listItem > .interactive.rounded.drawer-sidebar-button
+
+mail.proton.me##.bg-info.no-print.text-bold.relative.text-center.flex-nowrap.shrink-0.flex
+mail.proton.me##.drawer-sidebar-button--notification.relative.\*\:pointer-events-none.interactive.flex.rounded.drawer-sidebar-button
+mail.proton.me##.gap-2.button-promotion--full-gradient.button-promotion--icon-gradient.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+mail.proton.me##.gap-2.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+mail.proton.me##.gap-2.button-promotion--purple-blue-gradient.button-promotion--icon-gradient.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+mail.proton.me##.gap-2.justify-center.shrink-0.flex-column.\*\:min-size-auto.flex.w-full.mt-auto.quickSettingsButtonSection
+mail.proton.me##.gap-3.items-start.flex-nowrap.flex-column.\*\:min-size-auto.flex.pt-0\.5.p-3.h-full > button.button-outline-weak.button-medium.w-full.button
+mail.proton.me##.mt-2.px-3.app-infos.shrink-0
+mail.proton.me##.p-0-5.lg\:text-center.text-left.bg-promotion-gradient-horizontal.relative.bg-promotion.shrink-0.flex-nowrap.flex
+mail.proton.me##.p-2.flex-1
+mail.proton.me##.rounded.button-promotion--q3-sale-2026.items-center.flex.max-w-full.button-solid-norm.button-medium.button-pill.button
+mail.proton.me##.text-center.inline-block.button-outline-weak.button-medium.w-full.button
+mail.proton.me##button.relative.\*\:pointer-events-none.interactive.flex.rounded.drawer-sidebar-button:nth-of-type(3)
