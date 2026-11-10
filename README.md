@@ -96,6 +96,10 @@
 
 - [CleanFacebook](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanFacebook.txt)
 - [CleanYoutube](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanYoutube.txt)
+- [CleanGithub](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanGithub.txt)
+- [CleanDuck](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanDuck.txt)
+- [CleanProton](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanProton.txt)
+- [CleanBlibliatodo](https://raw.githubusercontent.com/Nomarexe/brave-filters-list/refs/heads/main/Focus/CleanBibliatodo.txt)
 
 ## Plus
 
