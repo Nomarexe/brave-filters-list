@@ -9075,7 +9075,6 @@
 ||venusarcade.com^
 ||veojuegos.com^
 ||veravegas.com^
-||vercel.app^
 ||vergerfleuri.ca.cx^
 ||verkom.be^
 ||vertex-games.com^
